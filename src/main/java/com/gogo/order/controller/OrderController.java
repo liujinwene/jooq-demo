@@ -21,4 +21,9 @@ public class OrderController {
 	public Object listByCd(ListOrderByCdCmd cmd) {
 		return new RestResp(orderService.listByCd(cmd));
 	}
+	
+	@RequestMapping("/listByCd3")
+	public Object listByCd3(ListOrderByCdCmd cmd) {
+		return new RestResp(orderService.listByCd(cmd));
+	}
 }
