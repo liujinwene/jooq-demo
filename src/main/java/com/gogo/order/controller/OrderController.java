@@ -11,19 +11,21 @@ import com.gogo.order.service.OrderService;
 @RestController
 @RequestMapping("/order")
 public class OrderController {
-	
-	
-	
+
 	@Autowired
 	private OrderService orderService;
-	
+
 	@RequestMapping("/listByCd")
 	public Object listByCd(ListOrderByCdCmd cmd) {
 		return new RestResp(orderService.listByCd(cmd));
 	}
-	
+
 	@RequestMapping("/listByCd2")
 	public Object listByCd2(ListOrderByCdCmd cmd) {
+
+	}
+	
+	@RequestMapping("/listByCd3")
+	public Object listByCd3(ListOrderByCdCmd cmd) {
 		return new RestResp(orderService.listByCd(cmd));
 	}
-}
